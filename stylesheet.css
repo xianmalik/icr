@@ -51,7 +51,7 @@ section { padding: 100px 0; background-size: cover !important; background-positi
 .page-wrap {
     transition: opacity .5s 1.2s ease-in;
     opacity: 0; }
-header {5
+header {
     height: 100vh;
     width: 100vw;
     overflow: auto; }
@@ -117,27 +117,51 @@ header {5
         border-radius: 100%; }
 
 
-input,
-textarea {
-    background: #F7F7F7;
-    border: none;
-    outline: none !important;
-    padding: 3em;
-    margin: 0 0 30px;
-    font-size: 14px;
+.input-field {
+    position: relative;
+    display: table;
     width: 100%;
-}
-input[type="submit"] {
-    display: inline-block;
-    width: auto;
-    padding: 2em 4em;
-    background: #0bb5ff;
-    color: #FFF;
-    font-size: 18px;
-    text-transform: uppercase;
-    font-weight: 900;
-    letter-spacing: .06em;
-}
+    margin: 0 0 30px;
+    overflow: hidden; }
+    .input-field label {
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 100%;
+        height: 100%;
+        font-size: 14px;
+        line-height: 1.2em;
+        padding: 3em;
+        font-weight: 100;
+        margin: 0;
+        pointer-events: none;
+        background: #F2F2F2;
+        transition: all .3s cubic-bezier(0.2, 1, 0.3, 1); }
+        .input-field input:focus + label,
+        .input-field textarea:focus + label {
+            left: 75%; }
+        .input-field input,
+        .input-field textarea {
+            border: none;
+            outline: none !important;
+            padding: 3em;
+            font-size: 14px;
+            line-height: 1.2em;
+            background: #F9F9F9;
+            width: 100%;
+            height: 100%; }
+        .input-field textarea {
+            min-height: 200px; }
+        input[type="submit"] {
+            display: inline-block;
+            width: auto;
+            padding: 2em 4em;
+            background: #0bb5ff;
+            color: #FFF;
+            font-size: 18px;
+            text-transform: uppercase;
+            font-weight: 900;
+            letter-spacing: .06em; }
 
 .testimonial {
     text-align: center;

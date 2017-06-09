@@ -231,15 +231,29 @@
                         </div>
                         <form action="">
                             <div class="col-md-6">
-                                <input type="text" placeholder="Name">
+                                <span class="input-field">
+                                    <input type="text" name="f-name">
+                                    <label for="f-name">Name</label>
+                                </span>
                             </div>
                             <div class="col-md-6">
-                                <input type="text" placeholder="Phone">
+                                <span class="input-field">
+                                    <input type="tel" name="f-phone">
+                                    <label for="f-phone">Phone</label>
+                                </span>
                             </div>
                             <div class="col-md-12">
-                                <input type="text" placeholder="Email">
-                                <textarea name="name" rows="8" placeholder="Message"></textarea>
-                                <input type="submit" name="" value="Contact Us">
+                                <span class="input-field">
+                                    <input type="email" name="f-email">
+                                    <label for="f-email">Email</label>
+                                </span>
+                                <span class="input-field">
+                                    <textarea name="f-message"></textarea>
+                                    <label for="f-message">Message</label>
+                                </span>
+                                <span class="input-field">
+                                    <input type="submit" name="f-submit" value="Contact Us">
+                                </span>
                             </div>
                         </form>
                     </div>
