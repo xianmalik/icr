@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
 
-    <title>About | Infection Control Results</title>
+    <title>Infection Control Results</title>
 
     <link rel="shortcut icon" href="img/favicon.png" type="image/x-icon">
 
@@ -43,9 +43,10 @@
             0%   { transform: translate(-100%, 0); }
             100% { transform: translate( 100%, 0); }
         }
+        .navbar-nav li a { font-size: 12px !important; }
     </style>
 </head>
-<body class="about">
+<body class="home">
     <div class="pre-loader">
         <div class="line-container">
             <div class="line-loader"></div>
@@ -58,19 +59,10 @@
     </div>
     <div class="page-wrap">
         <header>
-            <nav class="navbar navbar-default">
+            <nav class="navbar navbar-default" style="bottom: 50px; top: initial;text-align: center; transform: skewX(-1.5deg) skewY(-1.5deg);">
                 <div class="container">
-                    <div class="navbar-header">
-                        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#main-nav" aria-expanded="false">
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                            <span class="icon-bar"></span>
-                        </button>
-                        <a class="navbar-brand" href="index.html"><img src="img/logo.png"></a>
-                    </div>
-
                     <div class="collapse navbar-collapse" id="main-nav">
-                        <ul class="nav navbar-nav navbar-right">
+                        <ul class="nav navbar-nav" style="float: none; display: table; margin: auto;">
                             <li><a href="index.html">Home</a></li>
                             <li><a href="about.html">About</a></li>
                             <li><a href="services.html">Service</a></li>
@@ -82,16 +74,13 @@
                 </div>
             </nav>
 
-            <div id="Slider" style="background: url('img/about-slider-bg.jpg'); align-items: center;">
+            <div id="Slider" style="background: url('img/slider-bg.jpg');">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-6 text-center">
-                            <h1 style="margin: 1em 0 0;">
-                                <span class="block-reveal delay-1">About Us</span>
-                            </h1>
-                            <div class="slider-arrow service">
-                                <span>Scroll Down</span>
-                                <img src="img/icon-arrow-black.svg">
+                        <div class="col-md-12">
+                            <div class="slider-arrow" style="margin: 0 0 40px auto;">
+                                <span style="transform: translateY(-30px) rotate(-90deg);">Scroll Down</span>
+                                <img src="img/icon-arrow.svg">
                             </div>
                         </div>
                     </div>
@@ -100,37 +89,42 @@
         </header>
 
         <div class="content-wrapper">
-            <section style="padding-bottom: 0;">
+            <section>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-10 col-md-offset-1 text-center">
-                            <h5 class="block-reveal">Our Team</h5>
-                            <br>
+                        <div class="col-md-8 col-md-offset-2 text-center">
+                            <h5 class="block-reveal">Our Mission</h5>
                             <p class="block-reveal delay-1">
-                                Infection Control Results has brought together a skilled and experienced team of professionals both within and
-                                outside of the medical field.
-                            </p>
-                            <p class="block-reveal delay-2">
-                                Our owner/president, Luci Perri, has more than 20 years of experience in infection prevention and control. She has earned a
-                                master's degree in community health nursing, and public health from The University of South Carolina and is Board certified
-                                in infection prevention and control. Perri served in the United States Air Force for 20 years, retiring in 2007. As a result, she is
-                                familiar with both military and civilian healthcare settings and protocols.
+                                Infection Control Results is dedicated to reducing the risk of healthcare-associated infections in dialysis, acute, long-term
+                                care,
+                                rehab, and dental or medical ambulatory settings. We work with your healthcare facility, wherever you are and however
+                                you prefer, to ensure that all your facility's goals are met.
                             </p>
                         </div>
-                        <div class="col-md-8 col-md-offset-2">
-                            <div class="testimonial">
-                                <div class="testi-avatar">
-                                    <img src="img/testi-a.png">
-                                </div>
-                                <div class="testi-desc">
-                                    I have known Luci for over five years as an Infection Prevention colleague," says
-                                    Shelby Lassiter, Clinical Content Development Lead at Heath Research and Educational
-                                    Trust, American Hospital Association. "She is very knowledgeable and has a great deal of
-                                    excellent clinical experience in infection prevention. She worked with me at the NC Quality
-                                    Center as a Team Coach and worked with teams to facilitate improvement in HAIs.
-                                    She is a fantastic team player and is very personable."
-                                </div>
-                            </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="stack-bg" style="background: url('img/section1-bg.jpg');">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-md-7 white">
+                            <h5>Why Infection Control?</h5>
+                            <p>
+                                As most healthcare professionals know, the risk of healthcare-associated
+                                infections (HAIs) is very real. Per the CDC, there were more than 722,000 HAIs
+                                reported in the United States and 75,000 patients die every year as a result of an
+                                HAI. These HAIs include pneumonia, UTIs, bloodstream infections, gastrointestinal
+                                infections and surgical site infections.  The most common organism causing
+                                gastrointestinal HAIs is Clostridium difficile or C. diff. C. diff is an inflammation
+                                of the colon and is often spread throughout healthcare facilities.
+                            </p>
+                            <p>
+                                The CDC estimates that when healthcare professionals are aware of the
+                                problem and put in place systems to control HAIs, the incidence of many such
+                                infections can be reduced by up to 70 percent. Your Infection Control's primary
+                                mission is to help you achieve this goal.
+                            </p>
                         </div>
                     </div>
                 </div>
@@ -139,40 +133,83 @@
             <section>
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-12 text-center">
-                            <h5 class="block-reveal">What Makes Us Unique?</h5>
+                        <div class="col-md-8">
+                            <h5 class="block-reveal">Our Infection Control Services</h5>
                             <p class="block-reveal delay-1">
-                                Infection Control Results provides infection prevention and control services to acute care, long-term care, rehab facilities, dialysis centers
-                                <br>and ambulatory settings, including private medical offices, dental offices, and ambulatory surgery centers.
+                                At Your Infection Control, we offer you proven infection control solutions, so you can free up more of your time to spend with your patients. Just a few of the services we provide include
                             </p>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-md-12">
+                            <div class="card">
+                                <h6>
+                                    On-site
+                                    <br>high-level
+                                    <br>disinfection
+                                    <br>and sterilization
+                                    <br>assessment
+                                </h6>
+                            </div>
+                            <div class="card">
+                                <h6>
+                                    Infection
+                                    <br>prevention
+                                    <br>survey preparation
+                                </h6>
+                            </div>
+                            <div class="card">
+                                <h6>
+                                    On-site facility
+                                    <br>assessments
+                                </h6>
+                            </div>
+                        </div>
+                        <div class="col-md-12">
+                            <div class="card parallex">
+                                <h6>
+                                    Novice
+                                    <br>infection
+                                    <br>preventionist
+                                    <br>mentoring
+                                </h6>
+                            </div>
+                            <div class="card">
+                                <h6>
+                                    Remote
+                                    <br>assistance
+                                    <br>with HAI
+                                    <br>surveillance
+                                </h6>
+                            </div>
+                            <div class="card">
+                                <h6>
+                                    Developing or
+                                    <br>updating existing
+                                    <br>HAI prevention
+                                    <br>education programs
+                                </h6>
+                            </div>
                         </div>
                     </div>
                 </div>
             </section>
 
-            <section class="stack-bg" style="background: url('img/section3-bg.jpg');">
+            <section style="background: linear-gradient(to right, #455fd8, #0bb5ff, #FFF, #FFF); padding: 0;">
                 <div class="container">
                     <div class="row">
-                        <div class="col-md-7 white">
-                            <h5>
-                                Why Spend The Extra Time When
-                                <br>We Have the Skills?
-                            </h5>
-                            <p>
-                                We understand that you don't have extra time to create, implement and monitor an
-                                infection prevention and control program. That's where we can help. There's no
-                                reason to take time away from your patients when we have proven systems that
-                                work to control healthcare-associated infections (HAIs), such as pneumonia, blood
-                                infections, and UTIs.
+                        <div class="col-md-8 col-md-offset-4 whitebg" style="padding: 120px;">
+                            <h5 class="block-reveal">Who We Are</h5>
+                            <p class="block-reveal delay-1">
+                                Our owner/president, Luci Perri, has more than 20+ years of experience in
+                                infection prevention. A 20-year veteran of the United States Air Force, Ms.
+                                Perri is very familiar with both military and civilian healthcare settings.
                             </p>
-                            <p>
-                                Infection Control Results will visit your facility and do a thorough on-site assessment
-                                of your office or clinic's procedures for preventing HAIs, or we can simply consult
-                                over the phone. Then, we'll meet to decide on a plan of action to improve or replace
-                                your existing procedures. Our plan will show you how to educate your staff and
-                                conduct continuing education, monitoring and periodic reviews and reassessments
-                                to see how your facility is faring. Of course, our staff will be available to you throughout
-                                the process to answer questions and provide support.
+                            <p class="block-reveal delay-2">
+                                We have worked successfully with healthcare facilities, large and small,
+                                throughout the United States to dramatically reduce their number of HAIs
+                                and put systems in place that will maintain this infection control trend
+                                into the future.
                             </p>
                         </div>
                     </div>
@@ -256,6 +293,9 @@
     <!-- JScripts -->
     <script src="js/jquery.min.js"></script>
     <script src="js/smoothscroll.js"></script>
+    <script src="js/3dparallex.js"></script>
+    <script src="js/anime.min.js"></script>
+    <script src="js/tilt.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="js/script.js" charset="utf-8"></script>
 </body>
