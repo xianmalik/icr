@@ -197,7 +197,7 @@ header {
     margin-bottom: .6em; }
 #Assess .col-md-6 {
     margin-bottom: 3em;
-    padding: 0 5% 0 0; }
+    padding: 0 5% 0 3%; }
 #Assess .tick {
     margin-right: 1em;
     color: #0bb5ff;

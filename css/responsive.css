@@ -1,13 +1,11 @@
 section {
-    padding: 100px 0;
-}
+    padding: 100px 0;     }
 .navbar-default .navbar-nav>li>a {
-    text-align: right !important;
-}
+    text-align: right !important; }
 .navbar-collapse {
-    background: #2c2e2f;
-}
-
+    background: #2c2e2f; }
+.stack-bg {
+    padding: 100px 0; }
 .navbar-header button {
     background: rgba(51, 51, 51, .5) !important;
     border: 0;
@@ -22,5 +20,19 @@ section {
 .home #Slider {
     background: url('../img/slider-bg-phone.jpg') !important;
     background-size: cover !important;
-    background-position: center !important;
-}
+    background-position: center !important; }
+footer ul {
+    overflow: auto; }
+footer ul li {
+    width: 33.33%;
+    float: left; }
+footer .copyright {
+    margin-top: 3em !important;
+    text-align: center !important; }
+#Slider .slider-arrow {
+    margin-bottom: 60px; }
+.onsite #Slider { background: url('img/onsite-m.jpg'); }
+.education #Slider { background: url('img/education-m.jpg'); }
+.mentoring #Slider { background: url('img/mentoring-m.jpg'); }
+.hai #Slider { background: url('img/hai-m.jpg'); }
+.survey #Slider { background: url('img/survey-m.jpg'); }
