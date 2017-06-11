@@ -69,17 +69,26 @@ header {
     padding-top: 0; }
     .home .navbar-nav li a,
     .about .navbar-nav li a {
+        background-color: transparent !important;
         color: #FFF !important; }
     .navbar-default {
-        background-color: transparent;
+        background-color: transparent !important;
         position: absolute;
         top: 0;
         margin: auto;
         width: 100%;
-        border: 0px;
+        border: 0px !important;
         margin: 0; }
         .navbar-brand {
             padding: 20px; }
+            .navbar-collapse {
+                border: none !important; }
+            .dropdown-menu {
+                border-radius: none;
+                background: #2c2e2f; }
+                .dropdown-menu li a {
+                    height: 3.5em;
+                    line-height: 3.5em; }
 
 #Slider {
     background-size: cover !important;
@@ -145,7 +154,8 @@ header {
 
 .stack-bg {
     box-shadow: 0 22px 48px 0 rgba(0, 0, 0, .25);
-    position: relative; }
+    position: relative;
+    padding: 150px 0; }
     .stack-bg:before {
         content: '';
         background: #6d38bc;
@@ -273,7 +283,8 @@ footer ul {
         display: inline-block; }
         footer ul li a {
             padding: 1em 1.5em; }
-
+footer .copyright {
+    font-size: 10px; }
 
 
 

@@ -1,5 +1,12 @@
 jQuery('document').ready(function($){
     $('.block-reveal').wrapInner("<span></span>").append("<div class='block-over'></div>");
+    if( jQuery(window).width() >= 768 ){
+        jQuery('ul.nav li.dropdown').hover(function() {
+          jQuery(this).find('.dropdown-menu').stop(true, true).fadeIn(500);
+        }, function() {
+          jQuery(this).find('.dropdown-menu').stop(true, true).fadeOut(500);
+        });
+    }
 });
 
 jQuery(window).load(function(){
