@@ -7,6 +7,10 @@ jQuery('document').ready(function($){
           jQuery(this).find('.dropdown-menu').stop(true, true).fadeOut(500);
         });
     }
+    jQuery('a[href="#Contact"]').click(function(event){
+        event.preventDefault();
+        jQuery('html, body').animate({ scrollTop: jQuery('#Contact').offset().top -100 }, 1000, 'swing');
+    });
 });
 
 jQuery(window).load(function(){

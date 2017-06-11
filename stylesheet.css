@@ -87,6 +87,8 @@ header {
                 border-radius: none;
                 background: #2c2e2f; }
                 .dropdown-menu li a {
+                    color: #FFF !important;
+                    background: transparent !important;
                     height: 3.5em;
                     line-height: 3.5em; }
 
@@ -284,10 +286,8 @@ footer ul {
         footer ul li a {
             padding: 1em 1.5em; }
 footer .copyright {
-    font-size: 10px; }
-
-
-
+    font-size: 12px !important;
+    margin: 1em 0; }
 .animated-gradiant {
     background: linear-gradient(to right, #455fd8, #0bb5ff, #455fd8, #0bb5ff, #455fd8, #0bb5ff, #455fd8, #0bb5ff);
     -webkit-background-clip: text;
@@ -300,10 +300,6 @@ footer .copyright {
     50%{background-position:100% 50%}
     100%{background-position:0% 50%}
 }
-
-
-
-
 .block-reveal {
     display: inline-block;
     position: relative;
